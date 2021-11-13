@@ -27,6 +27,11 @@ $md4: 479.98;
 
 body {
   font-family: 'Heebo', sans-serif;
+  color:  #21243D;
+  font-size: 14px;
+  &.__lock{
+    overflow: hidden;
+  }
 }
 
 .wrapper {
@@ -39,7 +44,8 @@ body {
 }
 
 ._container {
-  max-width: $maxWidthContainer + px;
+  max-width: 877px;
+  padding: 0 10px;
   margin: 0 auto;
 
 
@@ -49,9 +55,53 @@ body {
   }
 }
 
+.page{
+  padding-top: 90px;
+  flex: 1 1 auto;
+  @media (max-width: $md3+px){
+    margin-top: 30px;
+  }
+}
+
+//btn
+//-------------------
+
+.btn{
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #FF6464;
+  border-radius: 2px;
+  font-weight: 500;
+  font-size: 20px;
+  color: #fff;
+  line-height: 145%;
+  height: 47px;
+  padding: 8px 20px;
+  transition: all 0.3s ease 0s;
+  @media (min-width: 992px) {
+    &:hover{
+      background: #c44545;
+    }
+  }
+}
+
+.title{
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 136.36%;
+  color: #21243D;
+
+}
+
+//---------------------------
 //Header
 //-----------------------------------------------------------------------------
-
+.header{
+  position: relative;
+  z-index: 100;
+}
 
 .header__content {
   max-width: 1052px;
@@ -82,7 +132,7 @@ body {
       top: 0;
       left: 0;
       overflow: auto;
-      background-color:rgba(255,255,255,0.8);
+      background-color:rgba(255,255,255,0.9);
       &._active{
         transform: translate(0, 0%);
       }
@@ -204,7 +254,90 @@ body {
   }
 }
 
+//Hello
+//-----------------------------------------------
 
+.hello{
+  padding: 38px 0 70px 0;
+}
+
+.hello__container{
+  display: flex;
+}
+
+.hello__content{
+  flex: 1 1 auto;
+  align-items: flex-start;
+  padding-right: 110px;
+  *:last-child{
+    margin-bottom: 0;
+  }
+}
+
+.hello__title{
+
+}
+
+.hello__text{
+  padding-bottom: 30px;
+  font-size: 16px;
+  line-height: 143.75%;
+}
+
+.hello__btn{
+  
+}
+
+.hello__avatar{
+  flex: 0 0 243px;
+  height: 243px;
+  overflow: hidden;
+  img{
+    max-width: 100%;
+  }
+}
+
+
+@media (max-width: $md2+px) {
+  .page{
+    margin-top: 0;
+    padding-top: 50px;
+  }
+  .hello{
+  }
+  .hello__content{
+    padding: 0 50px 0 0;
+  }
+  .hello__text{
+    padding: 0 15px 27px 0;
+  }
+}
+
+@media (max-width: $md3+px) {
+  .hello{
+    padding: 0;
+  }
+  .hello__container{
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .hello__content{
+    padding: 0;
+  }
+  .hello__title{
+    font-size: 30px;
+  }
+  .hello__text{
+    padding: 0 15px 27px 0;
+  }
+  .hello__avatar{
+  flex: 0 0 170px;
+  img{
+    width: 170px;
+    height: 170px;
+  }
+  }
+}
 
 
 
