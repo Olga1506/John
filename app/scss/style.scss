@@ -536,6 +536,32 @@ body{
   }
 }
 
+//Footer
+//---------------------------------------------
+
+
+
+
+.footer{
+  padding-top: 55px;
+  padding-bottom: 55px;
+}
+.footer__content{
+  text-align: center;
+
+}
+
+.footer__social a + a{
+  padding-left: 35px;
+}
+.footer__copy{
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  padding-top: 26px;
+  color: #21243D;
+}
 
 
 
