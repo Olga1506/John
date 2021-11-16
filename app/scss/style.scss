@@ -1,5 +1,6 @@
 
 html {
+  height: 100%;
   box-sizing: border-box;
 }
 
@@ -26,6 +27,7 @@ $md4: 479.98;
 
 
 body {
+  height: 100%;
   font-family: 'Heebo', sans-serif;
   color:  #21243D;
   font-size: 14px;
@@ -55,7 +57,9 @@ body {
   }
 }
 
-.page{
+
+
+main{
   padding-top: 90px;
   flex: 1 1 auto;
   @media (max-width: $md3+px){
@@ -196,6 +200,9 @@ body{
     font-weight: 500;
     color: #000000;
     transition: color 0.3s ease 0s;
+    &._active{
+      color: #FF6464;
+    }
     @media (min-width: $md2+px) {
       &:hover {
         color: #FF6464;
@@ -562,6 +569,87 @@ body{
   padding-top: 26px;
   color: #21243D;
 }
+
+
+
+
+
+//Blog страница
+//=====================================================
+
+.blog{
+  padding-bottom: 50px;
+}
+.blog__title{
+  margin-bottom: 50px;
+}
+
+.blog__subtitle{
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 146.6%;
+  color: #21243D;
+}
+.blog__item{
+  border-bottom: 1px solid #E0E0E0;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  &:last-child{
+    margin: 0;
+  }
+}
+.blog__info{
+  margin-bottom: 10px;
+  display: flex;
+  font-size: 20px;
+}
+.blog__date{
+
+}
+.blog__separator{
+  margin: 0 15px;
+}
+.blog__category{
+  color: #8695A4;
+}
+
+@media (max-width: $md3+px) {
+  .blog__title{
+    margin-bottom: 20px;
+  }
+  .blog__subtitle{
+    font-size: 26px;
+  }
+  .blog__item{
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+  }
+  .blog__info{
+    font-size: 16px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
